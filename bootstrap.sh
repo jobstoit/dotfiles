@@ -26,7 +26,7 @@ git clone https://github.com/mattn/emmet-vim.git $NVIM_PLUGIN/emmet-vim
 git clone https://github.com/neovim/nvim-lspconfig.git $NVIM_PLUGIN/nvim-lspconfig
 
 # Donwload tools
-[  $GOLANG_DISABLED != "true" ] && sh $DOTFILES_ROOT/golang.sh
-[  $RUST_DISABLED != "true" ] && sh $DOTFILES_ROOT/rust.sh
-[  $OPS_DISABLED != "true" ] && sh $DOTFILES_ROOT/ops.sh
+[ $GOLANG_DISABLED != 'true' ] && sh $DOTFILES_ROOT/golang.sh
+[ $RUST_DISABLED != 'true' ] && sh $DOTFILES_ROOT/rust.sh
+[ $OPS_DISABLED != 'true' ] && sh $DOTFILES_ROOT/ops.sh
 

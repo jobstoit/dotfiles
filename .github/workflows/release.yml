@@ -4,8 +4,8 @@ on:
     tags:
       - '*'
 jobs:
-  release:
-    name: Create container image
+  release-full:
+    name: Create full container image
     runs-on: ubuntu-latest
 
     steps:
@@ -37,6 +37,32 @@ jobs:
           push: true
           tags: jobstoit/workspace:${{ env.VERSION }},jobstoit/workspace:latest
 
+  release-golang:
+    name: Create golang container image
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Set tagname
+        run: |
+          TAG=${{ github.ref_name }}
+          VERSION=${TAG#v}
+          echo "VERSION=$VERSION" >> $GITHUB_ENV
+
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup QEMU
+        uses: docker/setup-qemu-action@v2
+
+      - name: Setup Buildx
+        uses: docker/setup-buildx-action@v2
+
+      - name: Docker login
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_PASSWORD }}
+
       - name: Build and push golang
         uses: docker/build-push-action@v3
         with:
@@ -45,6 +71,32 @@ jobs:
           push: true
           tags: jobstoit/workspace:go-${{ env.VERSION }},jobstoit/workspace:go-latest
 
+  release-rust:
+    name: Create rust container image
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Set tagname
+        run: |
+          TAG=${{ github.ref_name }}
+          VERSION=${TAG#v}
+          echo "VERSION=$VERSION" >> $GITHUB_ENV
+
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup QEMU
+        uses: docker/setup-qemu-action@v2
+
+      - name: Setup Buildx
+        uses: docker/setup-buildx-action@v2
+
+      - name: Docker login
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_PASSWORD }}
+
       - name: Build and push rust
         uses: docker/build-push-action@v3
         with:
@@ -52,6 +104,32 @@ jobs:
           build-args: GOLANG_DISABLED=true,OPS_DISABLED=true
           push: true
           tags: jobstoit/workspace:rust-${{ env.VERSION }},jobstoit/workspace:rust-latest
+
+  release-ops:
+    name: Create ops container image
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Set tagname
+        run: |
+          TAG=${{ github.ref_name }}
+          VERSION=${TAG#v}
+          echo "VERSION=$VERSION" >> $GITHUB_ENV
+
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup QEMU
+        uses: docker/setup-qemu-action@v2
+
+      - name: Setup Buildx
+        uses: docker/setup-buildx-action@v2
+
+      - name: Docker login
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_PASSWORD }}
 
       - name: Build and push ops
         uses: docker/build-push-action@v3
