@@ -1,0 +1,25 @@
+#!/bin/sh
+set -ex
+
+# Downloading golang
+GO_VERSION=1.19.5
+curl -Lo - https://dl.google.com/go/go$GO_VERSION.linux-amd64.tar.gz | tar -C ~/.local/ -xzf - && \
+	ln -s ~/.local/go/bin/* ~/.local/bin/ && \
+	echo "export GOROOT=~/.local/go\nexport GOPATH=~/.go\nexport PATH=\$GOPATH/bin:\$PATH" > ~/.config/profile.d/_go && \
+	go version
+
+# install basic tooling
+go install -v github.com/uudashr/gopkgs/cmd/gopkgs@v2 && \
+    go install -v github.com/ramya-rao-a/go-outline@latest && \
+    go install -v github.com/cweill/gotests/gotests@latest && \
+    go install -v github.com/fatih/gomodifytags@latest && \
+    go install -v github.com/josharian/impl@latest && \
+    go install -v github.com/haya14busa/goplay/cmd/goplay@latest && \
+    go install -v github.com/go-delve/delve/cmd/dlv@latest && \
+    go install -v github.com/golangci/golangci-lint/cmd/golangci-lint@latest && \
+    go install -v golang.org/x/tools/gopls@latest && \
+    go install -v honnef.co/go/tools/cmd/staticcheck@latest && \
+    sudo rm -rf $GOPATH/src $GOPATH/pkg $HOME/.cache/go $HOME/.cache/go-build
+
+# nvim plugins
+git clone https://github.com/fatih/vim-go.git ~/.config/nvim/pack/plugins/start/vim-go
