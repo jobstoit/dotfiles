@@ -5,6 +5,7 @@ DOTFILES_ROOT=$(dirname "$0")
 NVIM_PATH=~/.config/nvim
 NVIM_PLUGIN=$NVIM_PATH/pack/plugins/start
 
+
 mkdir -p ~/.local/bin
 mkdir -p ~/.config/profile.d
 mkdir -p $NVIM_PATH/colors
@@ -19,6 +20,9 @@ cp $DOTFILES_ROOT/vim/citylights.vim $NVIM_PATH/colors/citylights.vim
 cp $DOTFILES_ROOT/vim/vimrc $NVIM_PATH/vimrc
 cp $DOTFILES_ROOT/.bashrc ~/.bashrc
 cp $DOTFILES_ROOT/.zshrc ~/.zshrc
+cp $DOTFILES_ROOT/.profile ~/.config/profile.d/personal
+
+[ $SHELL = '/bin/zsh' ] && [ -d ~/.oh-my-zsh ] || git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
 
 # Install vim plugins
 git clone https://github.com/itchyny/lightline.vim.git $NVIM_PLUGIN/lightline.vim
