@@ -24,6 +24,8 @@ nmap <C-\> :tabe<CR>:terminal<CR><C-w>j:q<CR>
 
 " Nvim Terminal remap
 tnoremap <Esc> <C-\><C-n>
+tnoremap <C-w> <Esc><C-w>
+tnoremap <g-t> <Esc><C-w>gt
 
 set completeopt-=preview
 
