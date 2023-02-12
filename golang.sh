@@ -2,10 +2,8 @@
 set -ex
 
 # Downloading golang
-GO_VERSION=1.19.5
-curl -Lo - https://dl.google.com/go/go$GO_VERSION.linux-amd64.tar.gz | tar -C ~/.local/ -xzf - && \
-	ln -s ~/.local/go/bin/* ~/.local/bin/ && \
-	echo "export GOROOT=~/.local/go\nexport GOPATH=~/.go\nexport PATH=\$GOPATH/bin:\$PATH" > ~/.config/profile.d/_go && \
+nix-env -iA nixpkgs.go && \
+	echo "export GOPATH=~/.go\nexport PATH=\$GOPATH/bin:\$PATH" > ~/.config/profile.d/_go && \
 	go version
 
 # install basic tooling
