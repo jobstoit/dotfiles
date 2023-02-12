@@ -21,13 +21,14 @@ curl -L https://nixos.org/nix/install | sh && \
 nix-env -iA nixpkgs.neovim && \
 	nvim --version
 
+[ -d ~/.oh-my-zsh ] || sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 cp -f $DOTFILES_ROOT/vim/citylights.vim $NVIM_PATH/colors/citylights.vim
 cp -f $DOTFILES_ROOT/vim/init.vim $NVIM_PATH/init.vim
-cp -f $DOTFILES_ROOT/.bashrc ~/.bashrc
-cp -f $DOTFILES_ROOT/.zshrc ~/.zshrc
 cp -f $DOTFILES_ROOT/.profile ~/.config/profile.d/personal
+cat $DOTFILES_ROOT/.bashrc >> ~/.bashrc
+cat $DOTFILES_ROOT/.zshrc >> ~/.zshrc
 
-[ -d ~/.oh-my-zsh ] || sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Install vim plugins
 git clone https://github.com/itchyny/lightline.vim.git $NVIM_PLUGIN/lightline.vim
