@@ -12,23 +12,22 @@ mkdir -p ~/.config/profile.d
 mkdir -p $NVIM_PATH/colors
 mkdir -p $NVIM_PLUGIN
 
-# Install nix package manager
-curl -L https://nixos.org/nix/install | sh && \
-	. $HOME/.nix-profile/etc/profile.d/nix.sh && \
-	echo "export PATH=~/.nix-profile/bin:\$PATH" > ~/.config/profile.d/_nix
-
-# Install neovim
-nix-env -iA nixpkgs.neovim && \
-	nvim --version
-
 [ -d ~/.oh-my-zsh ] || sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
 cp -f $DOTFILES_ROOT/vim/citylights.vim $NVIM_PATH/colors/citylights.vim
 cp -f $DOTFILES_ROOT/vim/init.vim $NVIM_PATH/init.vim
 cp -f $DOTFILES_ROOT/.profile ~/.config/profile.d/personal
 cat $DOTFILES_ROOT/.bashrc >> ~/.bashrc
 cat $DOTFILES_ROOT/.zshrc >> ~/.zshrc
 
+# Install brew package manager
+#[ $(uname) = "Linux" ] && sudo mkdir -p /home/linuxbrew/.linuxbrew/bin
+NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)" && \
+	[ $(uname) = "Linux" ] && /home/linuxbrew/.linuxbrew/bin/brew shellenv >> ~/.config/profile.d/_brew && \
+	. ~/.config/profile.d/_brew
+
+# Install neovim
+brew install neovim && \
+	nvim --version
 
 # Install vim plugins
 git clone https://github.com/itchyny/lightline.vim.git $NVIM_PLUGIN/lightline.vim
@@ -49,4 +48,4 @@ if [ ! -z $GITHUB_CODESPACE_TOKEN ]; then
 	sudo locale-gen en_US.UTF-8
 fi
 
-nix-env --delete-generations old
+brew cleanup

@@ -2,7 +2,7 @@
 set -ex
 
 # Downloading golang
-nix-env -iA nixpkgs.go && \
+brew install go && \
 	echo "export GOPATH=~/.go\nexport PATH=\$GOPATH/bin:\$PATH" > ~/.config/profile.d/_go && \
 	go version
 
