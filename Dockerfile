@@ -8,3 +8,5 @@ COPY . /tmp/bootstrap/
 
 RUN sh /tmp/bootstrap/bootstrap.sh && \
 	sudo rm -rf /tmp/bootstrap
+
+CMD ["/usr/bin/zsh"]

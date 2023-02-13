@@ -2,9 +2,9 @@
 set -ex
 
 # Downloading golang
-brew install go && \
-	echo "export GOPATH=~/.go\nexport PATH=\$GOPATH/bin:\$PATH" > ~/.config/profile.d/_go && \
-	go version
+[ -z $(which go) ] && brew install go 
+echo "export GOPATH=~/.go\nexport PATH=\$GOPATH/bin:\$PATH" > ~/.config/profile.d/_go 
+go version
 
 # install basic tooling
 go install -v github.com/uudashr/gopkgs/cmd/gopkgs@v2 && \
