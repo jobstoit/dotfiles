@@ -67,7 +67,9 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           context: .
-          build-args: RUST_DISABLED=true,OPS_DISABLED=true
+          build-args: |-
+            RUST_DISABLED=true
+            OPS_DISABLED=true
           push: true
           tags: jobstoit/workspace:go-${{ env.VERSION }},jobstoit/workspace:go-latest
 
@@ -101,7 +103,9 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           context: .
-          build-args: GOLANG_DISABLED=true,OPS_DISABLED=true
+          build-args: |-
+            GOLANG_DISABLED=true
+            OPS_DISABLED=true
           push: true
           tags: jobstoit/workspace:rust-${{ env.VERSION }},jobstoit/workspace:rust-latest
 
@@ -135,6 +139,8 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           context: .
-          build-args: GOLANG_DISABLED=true,RUST_DISABLED=true
+          build-args: |-
+            GOLANG_DISABLED=true
+            RUST_DISABLED=true
           push: true
           tags: jobstoit/workspace:ops-${{ env.VERSION }},jobstoit/workspace:ops-latest
