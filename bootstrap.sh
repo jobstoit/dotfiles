@@ -27,6 +27,10 @@ cp -f $DOTFILES_ROOT/.zshrc ~/.zshrc
 brew install neovim && \
 	nvim --version
 
+# Install vim plug
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+
 # Donwload tools
 [ -z $GOLANG_DISABLED ] && GOLANG_DISABLED='false'
 [ -z $RUST_DISABLED ] && RUST_DISABLED='false'
