@@ -1,31 +1,56 @@
 " General
-syntax on
-filetype plugin indent on
+call plug#begin()
+" Language support
+Plug 'neovim/nvim-lspconfig'
+Plug 'fatih/vim-go', { 'tag': '*' }
+Plug 'rust-lang/rust.vim'
+Plug 'hashivim/vim-terraform'
+
+" Tools
+Plug 'itchyny/lightline.vim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.2' }
+
+" Colors
+Plug 'tjdevries/colorbuddy.vim'
+Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
+Plug 'jordanbrauer/citylights.nvim'
+Plug 'joshdick/onedark.vim'
+call plug#end()
+
+"syntax on
+"filetype plugin indent on
 set number
 
 " set relateive numbers
 set relativenumber
+let mapleader = "\<Space>"
 
 " Theming
-colorscheme citylights
-hi! Normal ctermbg=NONE guibg=NONE
-hi! LineNr ctermbg=NONE guibg=NONE
-hi! NonText ctermbg=NONE guibg=NONE
+colorscheme catppuccin-macchiato
+let g:lightline = {'colorscheme': 'catppuccin'}
 
 " Key mapping
 nmap - :Ex<CR>
-nmap \ :vsp .<CR>
 nmap <C-l> :lnext<CR>
 nmap <C-h> :lprevious<CR>
 nmap <C-j> :cnext<CR>
 nmap <C-k> :cprevious<CR>
-nmap <C-\> :tabe<CR>:terminal<CR><C-w>j:q<CR>
+"nmap <C-\> :tabe<CR>:terminal<CR><C-w>j:q<CR>
 
 " Nvim Terminal remap
 tnoremap <Esc> <C-\><C-n>
 tnoremap <C-w> <Esc><C-w>
 tnoremap <g-t> <Esc><C-w>gt
 
+" Find files using Telescope command-line sugar.
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+
+" autocmd BufWritePre *.rs lua vim.lsp.buf.formatting_sync(nil, 200)
+"
 set completeopt-=preview
 
 if executable('cargo')
@@ -46,6 +71,6 @@ lua << EOF
     })
 EOF
     
-    autocmd BufWritePre *.rs lua vim.lsp.buf.formatting_sync(nil, 200)
     autocmd FileType typescript setlocal formatprg=prettier\ --parser\ typescript
 endif
+

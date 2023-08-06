@@ -19,5 +19,3 @@ go install -v github.com/uudashr/gopkgs/cmd/gopkgs@v2 && \
     go install -v honnef.co/go/tools/cmd/staticcheck@latest && \
     sudo rm -rf $GOPATH/src $GOPATH/pkg $HOME/.cache/go $HOME/.cache/go-build
 
-# nvim plugins
-git clone https://github.com/fatih/vim-go.git ~/.config/nvim/pack/plugins/start/vim-go
