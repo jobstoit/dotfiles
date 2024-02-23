@@ -1,0 +1,13 @@
+k9s:
+  cluster: cc01
+  namespace:
+    active: all
+    lockFavorites: false
+    favorites:
+    - all
+    - default
+  view:
+    active: pod
+  featureGates:
+    nodeShell: false
+  portForwardAddress: localhost

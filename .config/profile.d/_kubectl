@@ -1,0 +1,1 @@
+[ $(command -v kubectl) ] && source <(kubectl completion ${SHELL#\/bin\/})

@@ -1,0 +1,2 @@
+#!/bin/sh
+alias git-prune-local="git branch -vv | grep '\[origin/.*: gone]' | awk '{print $1}' | xargs git branch -D"

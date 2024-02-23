@@ -1,0 +1,13 @@
+[ -z $USER ] && export USER=${HOME#/home/}
+export EDITOR="nvim"
+export VISUAL="nvim"
+export GNUPGHOME=$HOME/.gnupg
+export PASSWORD_STORE_DIR=$HOME/.pass
+#export TERM="xterm-256color"
+export TERM="xterm-color"
+export PATH=~/.local/bin:$PATH
+export LOGS=$HOME/.log
+export XDG_CONFIG_DIR=$HOME/.config
+
+alias e=$EDITOR
+alias personal-log="[ -e $LOGS/$(date +\"%Y%m%d\") ] || echo \"LOG $(date +'%A %eth %B %Y')\" | tr '[a-z]' '[A-Z]' > $LOGS/$(date +\"%Y%m%d\") && $EDITOR $LOGS/$(date +\"%Y%m%d\")"

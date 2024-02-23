@@ -3,8 +3,6 @@ set -ex
 
 # Install kubectl
 brew install helm kubectl
-echo "source <(kubectl completion \$(echo \$SHELL | sed -e 's#^\(/\w*\)*/##g'))" > ~/.config/profile.d/_kubectl
-echo "source <(kubectl completion \$(echo \$SHELL | sed -e 's#^\(/\w*\)*/##g'))" > ~/.config/profile.d/_helm
 
 # curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl" && \
 # 	mv kubectl ~/.local/bin/kubectl && \

@@ -1,0 +1,2 @@
+export BOUNDARY_ADDR="https://boundary.complero.info"
+[ $(command -v boundary) ] && complete -o nospace -C /opt/homebrew/bin/boundary boundary
