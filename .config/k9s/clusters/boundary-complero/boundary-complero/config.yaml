@@ -4,6 +4,9 @@ k9s:
     active: all
     lockFavorites: false
     favorites:
+    - prod
+    - dev
+    - auxiliary
     - all
   view:
     active: pod
