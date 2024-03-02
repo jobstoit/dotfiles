@@ -9,5 +9,8 @@ blur = true
 padding = { x = 0, y = 0 }
 decorations = "Buttonless"
 
+[font]
+normal = { family = "Hack Nerd Font", style = "Regular" }
+
 [colors.cursor]
 cursor = '#ffffff'

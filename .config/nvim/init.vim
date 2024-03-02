@@ -11,7 +11,7 @@ Plug 'hashivim/vim-terraform'
 Plug 'itchyny/lightline.vim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.2' }
-Plug 'airblade/vim-gitgutter'
+Plug 'lewis6991/gitsigns.nvim'
 Plug 'tpope/vim-fugitive'
 
 " Colors
@@ -67,6 +67,10 @@ nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 " autocmd BufWritePre *.rs lua vim.lsp.buf.formatting_sync(nil, 200)
 "
 set completeopt-=preview
+
+lua << EOF
+require('gitsigns').setup()
+EOF
 
 if executable('cargo')
     lua require'lspconfig'.rust_analyzer.setup({})
