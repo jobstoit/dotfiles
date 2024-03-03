@@ -1,5 +1,6 @@
 return {
   { "tpope/vim-fugitive" },
+  { "fatih/vim-go" },
   {
     "christoomey/vim-tmux-navigator",
     cmd = {
