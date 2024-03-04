@@ -8,7 +8,7 @@ return {
       "<cmd>Telescope buffers sort_mru=true sort_lastused=true<cr>",
       desc = "Switch Buffer",
     },
-    { "<leader>/", Util.telescope("live_grep"), desc = "Grep (root dir)" },
+    { "<leader>/", Util.telescope("live_grep", { cwd = false }), desc = "Grep (cwd)" },
     { "<leader>:", "<cmd>Telescope command_history<cr>", desc = "Command History" },
     { "<leader><space>", Util.telescope("files", { cwd = false }), desc = "Find Files (cwd)" },
     -- find
