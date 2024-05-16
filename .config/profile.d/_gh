@@ -1,1 +1,2 @@
+#!/bin/sh
 [ $(command -v gh) ] && source <(gh completion -s ${SHELL#\/bin\/})

@@ -1,1 +1,2 @@
+#!/bin/sh
 [ $(command -v flux) ] && source <(flux completion ${SHELL#\/bin\/})

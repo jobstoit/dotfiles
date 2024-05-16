@@ -1,6 +1,9 @@
 return {
   { "tpope/vim-fugitive" },
-  { "fatih/vim-go" },
+  { "tpope/vim-dadbod" },
+  { "kristijanhusak/vim-dadbod-completion" },
+  { "kristijanhusak/vim-dadbod-ui" },
+  --{ "fatih/vim-go" },
   {
     "christoomey/vim-tmux-navigator",
     cmd = {

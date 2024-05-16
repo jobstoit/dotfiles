@@ -4,6 +4,7 @@
     "lazyvim.plugins.extras.dap.nlua",
     "lazyvim.plugins.extras.lang.docker",
     "lazyvim.plugins.extras.lang.go",
+    "lazyvim.plugins.extras.lang.helm",
     "lazyvim.plugins.extras.lang.json",
     "lazyvim.plugins.extras.lang.markdown",
     "lazyvim.plugins.extras.lang.rust",
@@ -13,7 +14,7 @@
     "lazyvim.plugins.extras.lang.yaml"
   ],
   "news": {
-    "NEWS.md": "2123"
+    "NEWS.md": "4578"
   },
-  "version": 2
+  "version": 3
 }
