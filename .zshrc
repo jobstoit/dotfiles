@@ -25,7 +25,8 @@ setopt hist_find_no_dups
 # OhMyZSH
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="af-magic"
-plugins=(git git-auto-fetch fzf dotenv golang kubectl helm gh rust)
+ZSH_DOTENV_PROMPT=false
+plugins=(git git-auto-fetch fzf dotenv golang kubectl helm gh rust docker docker-compose)
 source $ZSH/oh-my-zsh.sh
 export GPG_TTY=$(tty)
 
