@@ -1,17 +1,12 @@
 k9s:
-  cluster: cc01
+  cluster: rancher-desktop
   namespace:
-    active: all
+    active: default
     lockFavorites: false
     favorites:
-    - all
-    - prod
-    - auxiliary
-    - kube-system
-    - velero
-    - dev
+    - default
   view:
-    active: pod
+    active: po
   featureGates:
     nodeShell: false
   portForwardAddress: localhost

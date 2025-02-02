@@ -1,17 +1,12 @@
 k9s:
-  cluster: boundary-complero
+  cluster: cc01
   namespace:
     active: all
     lockFavorites: false
     favorites:
     - all
-    - prod
-    - velero
-    - mogenius
-    - auxiliary
-    - dev
   view:
-    active: deploy
+    active: context
   featureGates:
     nodeShell: false
   portForwardAddress: localhost

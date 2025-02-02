@@ -6,12 +6,11 @@ k9s:
     favorites:
     - all
     - prod
-    - velero
-    - mogenius
-    - auxiliary
     - dev
+    - auxiliary
+    - kube-system
   view:
-    active: deploy
+    active: context
   featureGates:
     nodeShell: false
   portForwardAddress: localhost

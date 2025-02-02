@@ -1,0 +1,2 @@
+#!/bin/sh
+[ $(command -v velero) ] && velero completion zsh > "${fpath[1]}/_velero"

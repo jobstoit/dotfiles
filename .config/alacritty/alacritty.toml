@@ -1,7 +1,3 @@
-import = [
-  #"/Users/jobstoit/.config/alacritty/catppuccin/catppuccin-macchiato.toml",
-  "/Users/jobstoit/.config/alacritty/catppuccin/catppuccin-mocha.toml",
-]
 
 [env]
 TERM = "xterm-256color"
@@ -10,10 +6,16 @@ TERM = "xterm-256color"
 opacity = 0.90
 blur = true
 padding = { x = 0, y = 0 }
-decorations = "Buttonless"
+# decorations = "Buttonless"
 
 [font]
 normal = { family = "Hack Nerd Font", style = "Regular" }
 
 [colors.cursor]
 cursor = '#ffffff'
+
+[general]
+import = [
+  #"/Users/jobstoit/.config/alacritty/catppuccin/catppuccin-macchiato.toml",
+  "/Users/jobstoit/.config/alacritty/catppuccin/catppuccin-mocha.toml",
+]

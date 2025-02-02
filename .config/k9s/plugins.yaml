@@ -1,0 +1,257 @@
+# $HOME/.k9s/plugin.yml
+plugins:
+  describe-backup:
+    shortCut: Shift-D
+    confirm: false
+    scopes:
+      - backups.velero.io
+      - backup
+      - backups
+      - Backup
+    description: Describe backup
+    command: sh
+    args:
+      - -c
+      - >-
+        velero
+        backup
+        describe
+        $NAME
+        | less
+  trigger-backup:
+    shortCut: Shift-T
+    confirm: true
+    scopes:
+      - schedules.velero.io
+      - schedules
+      - schedule
+      - Schedule
+    description: Manually trigger backup
+    command: sh
+    background: true
+    args:
+      - -c
+      - >-
+        velero
+        backup
+        create
+        --namespace="$NAMESPACE"
+        --from-schedule="$NAME"
+
+  get-backup-logs:
+    shortCut: l
+    confirm: false
+    scopes:
+      - backups.velero.io
+      - backup
+      - backups
+      - Backup
+    description: Logs
+    command: sh
+    background: false
+    args:
+      - -c
+      - >-
+        velero
+        backup
+        logs
+        --namespace="$NAMESPACE"
+        $NAME 
+        | less
+
+  restore-backup:
+    shortCut: Shift-R
+    confirm: true
+    scopes:
+      - backups.velero.io
+      - backup
+      - backups
+      - Backup
+    description: Restore
+    command: sh
+    background: false
+    args:
+      - -c
+      - >-
+        velero
+        restore
+        create
+        --namespace="$NAMESPACE"
+        $NAME
+
+  toggle-helmrelease:
+    shortCut: Shift-T
+    confirm: true
+    scopes:
+      - helmreleases
+    description: Toggle to suspend or resume a HelmRelease
+    command: sh
+    background: false
+    args:
+      - -c
+      - >-
+        suspended=$(kubectl --context $CONTEXT get helmreleases -n $NAMESPACE $NAME -o=custom-columns=TYPE:.spec.suspend | tail -1);
+        verb=$([ $suspended = "true" ] && echo "resume" || echo "suspend");
+        flux
+        $verb helmrelease
+        --context $CONTEXT
+        -n $NAMESPACE $NAME
+
+  toggle-kustomization:
+    shortCut: Shift-T
+    confirm: true
+    scopes:
+      - kustomizations
+    description: Toggle to suspend or resume a Kustomization
+    command: sh
+    background: false
+    args:
+      - -c
+      - >-
+        suspended=$(kubectl --context $CONTEXT get kustomizations -n $NAMESPACE $NAME -o=custom-columns=TYPE:.spec.suspend | tail -1);
+        verb=$([ $suspended = "true" ] && echo "resume" || echo "suspend");
+        flux
+        $verb kustomization
+        --context $CONTEXT
+        -n $NAMESPACE $NAME
+  reconcile-git:
+    shortCut: Shift-Z
+    confirm: true
+    description: Flux reconcile
+    scopes:
+      - gitrepositories
+    command: sh
+    background: true
+    args:
+      - -c
+      - >-
+        flux
+        reconcile source git
+        --context $CONTEXT
+        -n $NAMESPACE $NAME
+        --with-source
+  reconcile-hr:
+    shortCut: Shift-Z
+    confirm: true
+    description: Flux reconcile
+    scopes:
+      - helmreleases
+    command: sh
+    background: true
+    args:
+      - -c
+      - >-
+        flux
+        reconcile helmrelease
+        --context $CONTEXT
+        -n $NAMESPACE $NAME
+        --with-source
+  reconcile-helm-repo:
+    shortCut: Shift-Z
+    description: Flux reconcile
+    scopes:
+      - helmrepositories
+    command: sh
+    background: true
+    confirm: true
+    args:
+      - -c
+      - >-
+        flux
+        reconcile source helm
+        --context $CONTEXT
+        -n $NAMESPACE $NAME
+  reconcile-oci-repo:
+    shortCut: Shift-Z
+    description: Flux reconcile
+    scopes:
+      - ocirepositories
+    command: sh
+    background: true
+    confirm: true
+    args:
+      - -c
+      - >-
+        flux
+        reconcile source oci
+        --context $CONTEXT
+        -n $NAMESPACE $NAME
+  reconcile-ks:
+    shortCut: Shift-Z
+    confirm: true
+    description: Flux reconcile
+    scopes:
+      - kustomizations
+    command: sh
+    background: true
+    args:
+      - -c
+      - >-
+        flux
+        reconcile kustomization
+        --context $CONTEXT
+        -n $NAMESPACE $NAME
+        --with-source
+  reconcile-ir:
+    shortCut: Shift-Z
+    confirm: false
+    description: Flux reconcile
+    scopes:
+      - imagerepositories
+    command: sh
+    background: true
+    args:
+      - -c
+      - >-
+        flux
+        reconcile image repository
+        --context $CONTEXT
+        -n $NAMESPACE $NAME
+  reconcile-iua:
+    shortCut: Shift-Z
+    confirm: true
+    description: Flux reconcile
+    scopes:
+      - imageupdateautomations
+    command: sh
+    background: true
+    args:
+      - -c
+      - >-
+        flux
+        reconcile image update
+        --context $CONTEXT
+        -n $NAMESPACE $NAME
+
+  get-suspended-helmreleases:
+    shortCut: Shift-S
+    confirm: false
+    description: Suspended Helm Releases
+    scopes:
+      - helmrelease
+    command: sh
+    background: false
+    args:
+      - -c
+      - >-
+        kubectl get
+        --context $CONTEXT
+        --all-namespaces
+        helmreleases.helm.toolkit.fluxcd.io -o json
+        | jq -r '.items[] | select(.spec.suspend==true) | [.metadata.namespace,.metadata.name,.spec.suspend] | @tsv'
+  get-suspended-kustomizations:
+    shortCut: Shift-S
+    confirm: false
+    description: Suspended Kustomizations
+    scopes:
+      - kustomizations
+    command: sh
+    background: false
+    args:
+      - -c
+      - >-
+        kubectl get
+        --context $CONTEXT
+        --all-namespaces
+        kustomizations.kustomize.toolkit.fluxcd.io -o json
+        | jq -r '.items[] | select(.spec.suspend==true) | [.metadata.name,.spec.suspend] | @tsv'

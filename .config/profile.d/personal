@@ -6,8 +6,9 @@ export PASSWORD_STORE_DIR=$HOME/.pass
 #export TERM="xterm-256color"
 export TERM="xterm-color"
 export PATH=~/.local/bin:$PATH
-export LOGS=$HOME/.log
+#export LOGS=$HOME/.log
+export LOGS=$HOME/Documents/obsidian/log
 export XDG_CONFIG_DIR=$HOME/.config
 
 alias e=$EDITOR
-alias personal-log="[ -e $LOGS/$(date +\"%Y%m%d\") ] || echo \"LOG $(date +'%A %eth %B %Y')\" | tr '[a-z]' '[A-Z]' > $LOGS/$(date +\"%Y%m%d\") && $EDITOR $LOGS/$(date +\"%Y%m%d\")"
+alias personal-log="[ -e $LOGS/$(date +\"%Y-%m-%d.md\") ] || echo \"# LOG $(date +'%A %eth %B %Y')\" | tr '[a-z]' '[A-Z]' > $LOGS/$(date +\"%Y-%m-%d.md\") && $EDITOR $LOGS/$(date +\"%Y-%m-%d.md\")"

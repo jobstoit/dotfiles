@@ -1,17 +1,13 @@
 k9s:
-  cluster: boundary-complero
+  cluster: cdevc01
   namespace:
     active: all
     lockFavorites: false
     favorites:
     - all
-    - prod
-    - velero
-    - mogenius
-    - auxiliary
-    - dev
+    - default
   view:
-    active: deploy
+    active: pod
   featureGates:
     nodeShell: false
   portForwardAddress: localhost

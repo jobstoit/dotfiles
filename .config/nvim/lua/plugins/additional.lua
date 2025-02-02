@@ -1,8 +1,8 @@
 return {
   { "tpope/vim-fugitive" },
-  { "tpope/vim-dadbod" },
-  { "kristijanhusak/vim-dadbod-completion" },
-  { "kristijanhusak/vim-dadbod-ui" },
+  -- { "tpope/vim-dadbod" },
+  -- { "kristijanhusak/vim-dadbod-completion" },
+  -- { "kristijanhusak/vim-dadbod-ui" },
   --{ "fatih/vim-go" },
   {
     "christoomey/vim-tmux-navigator",

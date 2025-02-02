@@ -26,7 +26,8 @@ setopt hist_find_no_dups
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="af-magic"
 ZSH_DOTENV_PROMPT=false
-plugins=(git git-auto-fetch fzf dotenv golang kubectl helm gh rust docker docker-compose)
+plugins=(git git-auto-fetch fzf dotenv golang kubectl helm gh rust docker docker-compose pass)
+ # plugins=(git git-auto-fetch fzf golang kubectl helm gh rust docker docker-compose pass)
 source $ZSH/oh-my-zsh.sh
 export GPG_TTY=$(tty)
 
@@ -56,3 +57,7 @@ zstyle ':completion:*' menu no
   zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 [ $(command -v zoxide ) ] && eval "$(zoxide init --cmd cd zsh)" && \
   [ $(command -v fzf) ] && zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/Users/jobstoit/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)

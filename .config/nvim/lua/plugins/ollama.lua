@@ -28,7 +28,7 @@ return {
   -- @type Ollama.Config
   opts = {
     -- your configuration overrides
-    model = "mistral",
+    model = "codegemma",
     url = "http://127.0.0.1:11434",
     serve = {
       on_start = true,
