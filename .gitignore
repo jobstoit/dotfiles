@@ -1,1 +1,2 @@
 .config/dfx/**/*.pem
+.config/k9s/screen-dumps/
