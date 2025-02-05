@@ -6,12 +6,12 @@ k9s:
     favorites:
     - all
     - prod
+    - auxiliary
     - velero
     - mogenius
-    - auxiliary
     - dev
   view:
-    active: deploy
+    active: pod
   featureGates:
     nodeShell: false
   portForwardAddress: localhost

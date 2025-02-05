@@ -4,6 +4,7 @@ k9s:
     active: all
     lockFavorites: false
     favorites:
+    - mogenius
     - all
     - default
   view:
