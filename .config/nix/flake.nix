@@ -5,22 +5,27 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     nix-darwin.url = "github:LnL7/nix-darwin/master";
     nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
+    nix-homebrew.url = "github:zhaofengli-wip/nix-homebrew";
   };
 
-  outputs = inputs@{ self, nix-darwin, nixpkgs }:
+  outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew }:
   let
     configuration = { pkgs, config, ... }: {
+
+      nixpkgs.config.allowUnfree = true;
+
       # List packages installed in system profile. To search by name, run:
       # $ nix-env -qaP | grep wget
-      environment.systemPackages =
-        [ 
+      environment.systemPackages = [ 
           pkgs.mkalias
           pkgs.alacritty
           pkgs.neovim
           pkgs.tmux
           pkgs.fzf
           pkgs.k9s
-          pkgs.ghostty
+          # pkgs.ghostty
+          pkgs.kubectl
+          pkgs.kubernetes-helm
 
           # Programming languages
           pkgs.go
@@ -28,10 +33,26 @@
           pkgs.rustup
         ];
 
-      # fonts.packages = 
-      #   [
-      #     (pkgs.nerdfonts.overwrite { fonts = [ "Hack" ]; })
-      #   ];
+        homebrew = {
+            enable = true;
+            casks = [
+              "boundary-desktop"
+              "orbstack"
+              "monero-wallet"
+              "slack"
+              "ledger-live"
+              "brave-browser"
+              "ghostty"
+            ];
+        };
+
+      # fonts.packages = [
+      #   pkgs.nerd-fonts.hack
+      # ];
+
+      system.defaults = {
+        NSGlobalDomain.AppleICUForce24HourTime = true;
+      };
 
       system.activationScripts.applications.text = let
         env = pkgs.buildEnv {
@@ -57,7 +78,7 @@
       nix.settings.experimental-features = "nix-command flakes";
 
       # Enable alternative shell support in nix-darwin.
-      # programs.fish.enable = true;
+      programs.zsh.enable = true;
 
       # Set Git commit hash for darwin-version.
       system.configurationRevision = self.rev or self.dirtyRev or null;
@@ -74,7 +95,22 @@
     # Build darwin flake using:
     # $ darwin-rebuild build --flake .#simple
     darwinConfigurations."jobstoit" = nix-darwin.lib.darwinSystem {
-      modules = [ configuration ];
+      modules = [
+        configuration
+        nix-homebrew.darwinModules.nix-homebrew{
+          nix-homebrew = {
+              enable = true;
+              enableRosetta = true;
+              user = "jobstoit";
+              autoMigrate = true;
+              taps = {
+                "":""
+              };
+          };
+        }
+      ];
     };
+
+    darwinPackages = self.darwinConfigurations."jobstoit".pkgs;
   };
 }
