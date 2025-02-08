@@ -18,12 +18,16 @@
       # $ nix-env -qaP | grep wget
       environment.systemPackages = [ 
           pkgs.mkalias
-          pkgs.alacritty
           pkgs.neovim
           pkgs.tmux
           pkgs.fzf
           pkgs.k9s
+          pkgs.stow
+          pkgs.gh
+          pkgs.fzf
           # pkgs.ghostty
+          pkgs.slack
+          pkgs.brave
           pkgs.kubectl
           pkgs.kubernetes-helm
 
@@ -36,19 +40,18 @@
         homebrew = {
             enable = true;
             casks = [
-              "boundary-desktop"
+              # "boundary-desktop"
               "orbstack"
               "monero-wallet"
-              "slack"
               "ledger-live"
-              "brave-browser"
+              "private-internet-access"
               "ghostty"
             ];
         };
 
-      # fonts.packages = [
-      #   pkgs.nerd-fonts.hack
-      # ];
+      fonts.packages = [
+        pkgs.nerd-fonts.hack
+      ];
 
       system.defaults = {
         NSGlobalDomain.AppleICUForce24HourTime = true;
@@ -103,9 +106,9 @@
               enableRosetta = true;
               user = "jobstoit";
               autoMigrate = true;
-              taps = {
-                "":""
-              };
+              # taps = {
+              #   "":""
+              # };
           };
         }
       ];
