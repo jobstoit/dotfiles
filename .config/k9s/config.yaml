@@ -1,3 +1,9 @@
 k9s:
+  refreshRate: 2
+  maxConnRetry: 5
   ui:
     skin: catppuccin-frappe-transparent
+  logger:
+    tail: 100
+    buffer: 5000
+    sinceSeconds: -1

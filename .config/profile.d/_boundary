@@ -1,4 +1,5 @@
 #!/bin/sh
 export BOUNDARY_ADDR="https://boundary.complero.info"
 export BOUNDARY_AUTH_METHOD_ID="amoidc_LtAtiCyYbt"
+export BOUNDARY_CONNECT_TARGET_SCOPE_ID="p_mgYFj9SwNK"
 [ $(command -v boundary) ] && complete -o nospace -C /opt/homebrew/bin/boundary boundary

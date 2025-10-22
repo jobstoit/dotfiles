@@ -4,9 +4,13 @@ k9s:
     active: all
     lockFavorites: false
     favorites:
-    - all
+      - auxiliary
+      - dev
+      - prod
+      - all
+      - default
   view:
-    active: context
+    active: v1/pods all
   featureGates:
     nodeShell: false
-  portForwardAddress: localhost
+  proxy: null

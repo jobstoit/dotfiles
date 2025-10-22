@@ -4,14 +4,10 @@ k9s:
     active: all
     lockFavorites: false
     favorites:
-    - all
-    - prod
-    - auxiliary
-    - kube-system
-    - velero
-    - dev
+      - all
+      - default
   view:
-    active: pod
+    active: v1/pods all
   featureGates:
     nodeShell: false
-  portForwardAddress: localhost
+  proxy: null

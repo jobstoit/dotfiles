@@ -1,2 +1,3 @@
 #!/bin/sh
 export K9S_CONFIG_DIR=~/.config/k9s
+alias bk9s="kubectl config set-credentials boundary-complero --token \"$(boundary targets authorize-session -id='ttcp_Cn2t2wV0Tn' -format json | jq -r '.item.credentials[0].secret.decoded.service_account_token')\" && boundary connect kube -target-name='Kubernetes API' -style='k9s'"

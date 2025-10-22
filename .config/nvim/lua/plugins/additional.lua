@@ -1,5 +1,7 @@
 return {
+  { "fcpg/vim-farout" },
   { "tpope/vim-fugitive" },
+  -- { "mattn/emmet-vim" },
   -- { "tpope/vim-dadbod" },
   -- { "kristijanhusak/vim-dadbod-completion" },
   -- { "kristijanhusak/vim-dadbod-ui" },

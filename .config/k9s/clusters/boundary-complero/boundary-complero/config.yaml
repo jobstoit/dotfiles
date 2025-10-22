@@ -4,14 +4,14 @@ k9s:
     active: all
     lockFavorites: false
     favorites:
-    - all
-    - prod
-    - auxiliary
-    - velero
-    - mogenius
-    - dev
+      - all
+      - velero
+      - prod
+      - mogenius
+      - auxiliary
+      - dev
   view:
-    active: pod
+    active: contexts
   featureGates:
     nodeShell: false
-  portForwardAddress: localhost
+  proxy: null
