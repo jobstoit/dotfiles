@@ -24,16 +24,16 @@
           pkgs.k9s
           pkgs.stow
           pkgs.gh
-          pkgs.fzf
+          pkgs.boundary
           # pkgs.ghostty
-          pkgs.slack
-          pkgs.brave
           pkgs.kubectl
           pkgs.kubernetes-helm
+          pkgs.lazygit
 
           # Programming languages
           pkgs.go
           pkgs.golangci-lint
+          pkgs.nodejs_24
           pkgs.rustup
         ];
 
@@ -44,14 +44,18 @@
               "orbstack"
               "monero-wallet"
               "ledger-live"
-              "private-internet-access"
+              "nordvpn"
               "ghostty"
+	            "slack"
+	            "brave-browser"
             ];
         };
 
       fonts.packages = [
         pkgs.nerd-fonts.hack
       ];
+
+      system.primaryUser = "jobstoit";
 
       system.defaults = {
         NSGlobalDomain.AppleICUForce24HourTime = true;
@@ -97,7 +101,7 @@
   {
     # Build darwin flake using:
     # $ darwin-rebuild build --flake .#simple
-    darwinConfigurations."jobstoit" = nix-darwin.lib.darwinSystem {
+    darwinConfigurations."Jobs-MacBook-Pro" = nix-darwin.lib.darwinSystem {
       modules = [
         configuration
         nix-homebrew.darwinModules.nix-homebrew{
