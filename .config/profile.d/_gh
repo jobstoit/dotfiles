@@ -1,2 +1,2 @@
 #!/bin/sh
-[ $(command -v gh) ] && source <(gh completion -s ${SHELL#\/bin\/})
+[ $(command -v gh) ] && source <(gh completion -s $(echo $SHELL | sed 's#^.*/##'))

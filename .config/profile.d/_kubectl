@@ -1,2 +1,2 @@
 #!/bin/sh
-[ $(command -v kubectl) ] && source <(kubectl completion ${SHELL#\/bin\/})
+[ $(command -v kubectl) ] && source <(kubectl completion $(echo $SHELL | sed 's#^.*/##'))

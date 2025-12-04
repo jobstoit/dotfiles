@@ -25,10 +25,15 @@
           pkgs.stow
           pkgs.gh
           pkgs.boundary
+          pkgs.vault-bin
           # pkgs.ghostty
           pkgs.kubectl
           pkgs.kubernetes-helm
           pkgs.lazygit
+          pkgs.gnupg
+          pkgs.ripgrep
+          pkgs.postgresql
+          pkgs.ffmpeg
 
           # Programming languages
           pkgs.go
@@ -43,11 +48,12 @@
               # "boundary-desktop"
               "orbstack"
               "monero-wallet"
-              "ledger-live"
+              "ledger-wallet"
               "nordvpn"
               "ghostty"
 	            "slack"
 	            "brave-browser"
+              "whatsapp"
             ];
         };
 
