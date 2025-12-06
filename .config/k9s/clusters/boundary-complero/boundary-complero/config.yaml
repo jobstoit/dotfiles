@@ -5,10 +5,10 @@ k9s:
     lockFavorites: false
     favorites:
       - all
-      - velero
-      - prod
-      - mogenius
       - auxiliary
+      - mogenius
+      - prod
+      - velero
       - dev
   view:
     active: v1/pods all

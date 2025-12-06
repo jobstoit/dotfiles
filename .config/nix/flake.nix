@@ -44,17 +44,25 @@
 
         homebrew = {
             enable = true;
+            brews = [
+              "mas"
+            ];
             casks = [
               # "boundary-desktop"
               "orbstack"
               "monero-wallet"
               "ledger-wallet"
-              "nordvpn"
               "ghostty"
 	            "slack"
 	            "brave-browser"
               "whatsapp"
             ];
+            masApps = {
+              "Toggl" = 1291898086;
+              "NordVPN" = 905953485;
+              "Speedtest" = 1153157709;
+              "CleanMyMac" = 1339170533;
+            };
         };
 
       fonts.packages = [
