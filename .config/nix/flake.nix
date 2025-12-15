@@ -34,6 +34,7 @@
           pkgs.ripgrep
           pkgs.postgresql
           pkgs.ffmpeg
+          pkgs.yt-dlp
 
           # Programming languages
           pkgs.go
@@ -56,6 +57,7 @@
 	            "slack"
 	            "brave-browser"
               "whatsapp"
+              "zoom"
             ];
             masApps = {
               "Toggl" = 1291898086;

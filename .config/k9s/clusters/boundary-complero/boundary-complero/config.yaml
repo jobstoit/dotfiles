@@ -5,13 +5,13 @@ k9s:
     lockFavorites: false
     favorites:
       - all
-      - auxiliary
-      - mogenius
-      - prod
       - velero
+      - prod
+      - mogenius
+      - auxiliary
       - dev
   view:
-    active: v1/pods all
+    active: v1/pods auxiliary
   featureGates:
     nodeShell: false
   proxy: null
