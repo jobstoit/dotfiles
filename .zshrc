@@ -57,3 +57,11 @@ zstyle ':completion:*' menu no
   zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 [ $(command -v zoxide ) ] && eval "$(zoxide init --cmd cd zsh)" && \
   [ $(command -v fzf) ] && zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
+# -------------------------------------------
+# 1. Edit Command Buffer
+# -------------------------------------------
+# Open the current command in your $EDITOR (e.g., neovim)
+# Press Ctrl+X followed by Ctrl+E to trigger
+autoload -Uz edit-command-line
+zle -N edit-command-line
+bindkey '^X^E' edit-command-line

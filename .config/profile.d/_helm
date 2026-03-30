@@ -1,2 +1,2 @@
 #!/bin/sh
-[ $(command -v helm) ] && source <(helm completion ${SHELL#\/bin\/})
+[ $(command -v helm) ] && source <(helm completion ${SHELL##*/})

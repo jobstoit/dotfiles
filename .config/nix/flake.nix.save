@@ -29,28 +29,24 @@
           # pkgs.ghostty
           pkgs.kubectl
           pkgs.kubernetes-helm
-          pkgs.velero
-          pkgs.fluxcd
           pkgs.lazygit
           pkgs.gnupg
           pkgs.ripgrep
           pkgs.postgresql
           pkgs.ffmpeg
+          pkgs.yt-dlp
 
           # Programming languages
           pkgs.go
           pkgs.golangci-lint
           pkgs.nodejs_24
           pkgs.rustup
-          pkgs.terraform
         ];
 
         homebrew = {
             enable = true;
             brews = [
               "mas"
-              "qo"
-              "yt-dlp"
             ];
             casks = [
               # "boundary-desktop"
@@ -63,8 +59,6 @@
               "whatsapp"
               "zoom"
               "discord"
-              "signal"
-              "pgadmin4"
             ];
             masApps = {
               "Toggl" = 1291898086;
@@ -88,7 +82,7 @@
         env = pkgs.buildEnv {
           name = "system-applications";
           paths = config.environment.systemPackages;
-          pathsToLink = ["/Applications"];
+          pathsToLink = "/Applications";
         };
       in
         pkgs.lib.mkForce ''
