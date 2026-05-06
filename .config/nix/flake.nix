@@ -36,6 +36,7 @@
           pkgs.ripgrep
           pkgs.postgresql
           pkgs.ffmpeg
+          pkgs.pass
 
           # Programming languages
           pkgs.go
