@@ -48,6 +48,7 @@
 
         homebrew = {
             enable = true;
+            enableZshIntegration = true;
             brews = [
               "mas"
               "qo"
@@ -72,6 +73,13 @@
               "NordVPN" = 905953485;
               "Speedtest" = 1153157709;
               "CleanMyMac" = 1339170533;
+            };
+            global = {
+              autoUpdate = true;
+            };
+            onActivation = {
+              autoUpdate = true;
+              upgrade = true;
             };
         };
 
