@@ -7,7 +7,7 @@ export PASSWORD_STORE_DIR=$HOME/.pass
 export TERM="xterm-color"
 export PATH=~/.local/bin:$PATH
 #export LOGS=$HOME/.log
-export LOGS=$HOME/Documents/obsidian/log
+export LOGS=$HOME/.personal-log
 export XDG_CONFIG_DIR=$HOME/.config
 
 alias e=$EDITOR
