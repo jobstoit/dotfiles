@@ -1,7 +1,7 @@
 k9s:
   cluster: boundary-complero
   namespace:
-    active: all
+    active: prod
     lockFavorites: false
     favorites:
       - all
@@ -11,7 +11,7 @@ k9s:
       - auxiliary
       - dev
   view:
-    active: v1/pods auxiliary
+    active: v1/pods all
   featureGates:
     nodeShell: false
   proxy: null
