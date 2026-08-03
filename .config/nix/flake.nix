@@ -6,9 +6,18 @@
     nix-darwin.url = "github:LnL7/nix-darwin/master";
     nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
     nix-homebrew.url = "github:zhaofengli-wip/nix-homebrew";
+
+    homebrew-core = {
+      url = "github:homebrew/homebrew-core";
+      flake = false;
+    };
+    homebrew-cask = {
+      url = "github:homebrew/homebrew-cask";
+      flake = false;
+    };
   };
 
-  outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew }:
+  outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew, homebrew-core, homebrew-cask }:
   let
     configuration = { pkgs, config, ... }: {
 
@@ -37,13 +46,14 @@
           pkgs.postgresql
           pkgs.ffmpeg
           pkgs.pass
+          pkgs.ollama
 
           # Programming languages
           pkgs.go
           pkgs.golangci-lint
           pkgs.nodejs_24
           pkgs.rustup
-          pkgs.terraform
+          # pkgs.terraform
         ];
 
         homebrew = {
@@ -67,12 +77,13 @@
               "discord"
               "signal"
               "pgadmin4"
+              "stremio"
             ];
             masApps = {
-              "Toggl" = 1291898086;
-              "NordVPN" = 905953485;
-              "Speedtest" = 1153157709;
-              "CleanMyMac" = 1339170533;
+              # "Toggl" = 1291898086;
+              # "NordVPN" = 905953485;
+              # "Speedtest" = 1153157709;
+              # "CleanMyMac" = 1339170533;
             };
             global = {
               autoUpdate = true;
@@ -133,7 +144,7 @@
   {
     # Build darwin flake using:
     # $ darwin-rebuild build --flake .#simple
-    darwinConfigurations."Jobs-MacBook-Pro" = nix-darwin.lib.darwinSystem {
+    darwinConfigurations."Jobs-MacBook-Pro-2" = nix-darwin.lib.darwinSystem {
       modules = [
         configuration
         nix-homebrew.darwinModules.nix-homebrew{
