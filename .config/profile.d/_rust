@@ -1,4 +1,5 @@
 #!/bin/sh
 export PATH=~/.cargo/bin:$PATH
-source <(rustup completions ${SHELL##*/} rustup)
-source <(rustup completions ${SHELL##*/} cargo)
+source <(rustup completions ${SHELL##*/})
+# source <(rustup completions ${SHELL##*/} rustup)
+# source <(rustup completions ${SHELL##*/} cargo)
