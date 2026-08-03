@@ -80,10 +80,10 @@
               "stremio"
             ];
             masApps = {
-              # "Toggl" = 1291898086;
-              # "NordVPN" = 905953485;
-              # "Speedtest" = 1153157709;
-              # "CleanMyMac" = 1339170533;
+              "Toggl" = 1291898086;
+              "NordVPN" = 905953485;
+              "Speedtest" = 1153157709;
+              "CleanMyMac" = 1339170533;
             };
             global = {
               autoUpdate = true;
@@ -91,6 +91,7 @@
             onActivation = {
               autoUpdate = true;
               upgrade = true;
+              cleanup = "uninstall";
             };
         };
 
