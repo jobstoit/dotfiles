@@ -47,6 +47,7 @@
           pkgs.ffmpeg
           pkgs.pass
           pkgs.ollama
+          pkgs.opencode
 
           # Programming languages
           pkgs.go
