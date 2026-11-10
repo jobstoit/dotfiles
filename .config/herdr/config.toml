@@ -1,0 +1,11 @@
+onboarding = false
+[theme]
+name = "catppuccin"
+auto_switch = false
+
+[ui.sound]
+enabled = true
+
+[ui.toast]
+delivery = "terminal"
+delay_seconds = 10

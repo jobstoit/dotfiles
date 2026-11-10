@@ -47,10 +47,14 @@
           pkgs.ffmpeg
           pkgs.pass
           pkgs.ollama
-          pkgs.opencode
+          pkgs.pi-coding-agent
+          pkgs.herdr
+          pkgs.ripgrep
+          pkgs.act
+          pkgs.codex
 
           # Programming languages
-          pkgs.go
+          pkgs.go_1_27
           pkgs.golangci-lint
           pkgs.nodejs_24
           pkgs.rustup
@@ -64,6 +68,7 @@
               "mas"
               "qo"
               "yt-dlp"
+              "icp-cli"
             ];
             casks = [
               # "boundary-desktop"
@@ -79,12 +84,16 @@
               "signal"
               "pgadmin4"
               "stremio"
+              "herdr-app"
             ];
             masApps = {
-              "Toggl" = 1291898086;
+              # "Toggl" = 1291898086;
               "NordVPN" = 905953485;
               "Speedtest" = 1153157709;
               "CleanMyMac" = 1339170533;
+              "Numbers" = 361304891;
+              "Pages" = 361309726;
+              "Keynote" = 361285480;
             };
             global = {
               autoUpdate = true;
@@ -152,7 +161,7 @@
         nix-homebrew.darwinModules.nix-homebrew{
           nix-homebrew = {
               enable = true;
-              enableRosetta = true;
+              enableRosetta = false;
               user = "jobstoit";
               autoMigrate = true;
               # taps = {

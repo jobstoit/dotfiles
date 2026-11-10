@@ -1,0 +1,236 @@
+2026-08-13T13:23:44.333530Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=15779
+2026-08-13T13:23:44.333577Z  INFO herdr::client: connecting to server path=/Users/jobstoit/.config/herdr/herdr-client.sock
+2026-08-13T13:23:44.569946Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-08-13T13:32:28.572541Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=15779
+2026-08-13T13:32:45.178034Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=16820
+2026-08-13T13:32:45.178208Z  INFO herdr::client: connecting to server path=/Users/jobstoit/.config/herdr/herdr-client.sock
+2026-08-13T13:32:45.353242Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-08-27T08:40:51.191116Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=97289
+2026-08-27T08:40:51.191682Z  INFO herdr::client: connecting to server path=/Users/jobstoit/.config/herdr/herdr-client.sock
+2026-08-27T08:40:51.414253Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-08-27T15:42:40.629539Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=97289
+2026-08-27T15:43:15.010928Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=2701
+2026-08-27T15:43:15.011494Z  INFO herdr::client: connecting to server path=/Users/jobstoit/.config/herdr/herdr-client.sock
+2026-08-27T15:43:15.012290Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-08-27T15:50:25.599500Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=2701
+2026-08-27T16:00:51.008831Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=2112
+2026-08-27T16:00:51.008992Z  INFO herdr::client: connecting to server path=/Users/jobstoit/.config/herdr/herdr-client.sock
+2026-08-27T16:00:51.264169Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-08-27T16:40:27.751345Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=2112
+2026-08-27T16:40:31.014381Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=3379
+2026-08-27T16:40:31.014497Z  INFO herdr::client: connecting to server path=/Users/jobstoit/.config/herdr/herdr-client.sock
+2026-08-27T16:40:31.068008Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-08-27T16:44:32.766486Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=3379
+2026-08-27T16:57:29.503148Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=3611
+2026-08-27T16:57:29.503328Z  INFO herdr::client: connecting to server path=/Users/jobstoit/.config/herdr/herdr-client.sock
+2026-08-27T16:57:29.645506Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-08-27T17:07:50.106569Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=3611
+2026-08-27T17:11:35.992759Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=9260
+2026-08-27T17:11:35.992954Z  INFO herdr::client: connecting to server path=/Users/jobstoit/.config/herdr/herdr-client.sock
+2026-08-27T17:11:36.159518Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-08-27T17:19:56.285131Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=9260
+2026-08-27T17:27:48.323076Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=20713
+2026-08-27T17:27:48.323408Z  INFO herdr::client: connecting to server path=/Users/jobstoit/.config/herdr/herdr-client.sock
+2026-08-27T17:27:48.383294Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-08-27T17:28:14.438140Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=20713
+2026-08-27T17:29:47.457405Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=20751
+2026-08-27T17:29:47.457704Z  INFO herdr::client: connecting to server path=/Users/jobstoit/.config/herdr/herdr-client.sock
+2026-08-27T17:29:47.558199Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-08-27T17:31:09.715030Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=20751
+2026-08-28T03:19:37.396051Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=58610
+2026-08-28T03:19:37.396696Z  INFO herdr::client: connecting to server path=/Users/jobstoit/.config/herdr/herdr-client.sock
+2026-08-28T03:19:37.495972Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-09-01T17:35:58.182217Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=58610
+2026-09-01T17:36:01.652311Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=14130
+2026-09-01T17:36:01.652342Z  INFO herdr::client: connecting to server path=/Users/jobstoit/.config/herdr/herdr-client.sock
+2026-09-01T17:36:01.754477Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-09-03T03:59:37.119896Z  WARN herdr::sound: sound playback failed sound=Done err=player exited with exit status: 1
+2026-09-03T03:59:45.721718Z  WARN herdr::sound: sound playback failed sound=Done err=player exited with exit status: 1
+2026-09-03T03:59:50.045011Z  WARN herdr::sound: sound playback failed sound=Done err=player exited with exit status: 1
+2026-09-03T03:59:56.824144Z  WARN herdr::sound: sound playback failed sound=Done err=player exited with exit status: 1
+2026-09-04T18:48:05.378475Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=2642
+2026-09-04T18:48:05.378770Z  INFO herdr::client: connecting to server path=/Users/jobstoit/.config/herdr/herdr-client.sock
+2026-09-04T18:48:05.601984Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-09-04T18:51:07.653012Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=2642
+2026-09-06T16:14:46.474740Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=11359
+2026-09-06T16:14:46.475202Z  INFO herdr::client: connecting to server path=/Users/jobstoit/.config/herdr/herdr-client.sock
+2026-09-06T16:14:46.594207Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-09-06T18:40:52.830433Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=11359
+2026-09-07T04:40:51.420789Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=1378
+2026-09-07T04:40:51.420986Z  INFO herdr::client: connecting to server path=/Users/jobstoit/.config/herdr/herdr-client.sock
+2026-09-07T04:40:51.637519Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-09-09T18:15:15.849355Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=1378
+2026-09-09T18:56:58.451201Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=1560
+2026-09-09T18:56:58.451404Z  INFO herdr::client: connecting to server path=/Users/jobstoit/.config/herdr/herdr-client.sock
+2026-09-09T18:56:58.693320Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-09-09T18:57:42.691059Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=1560
+2026-09-10T07:29:42.539377Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=2156
+2026-09-10T07:29:42.539615Z  INFO herdr::client: connecting to server path=/Users/jobstoit/.config/herdr/herdr-client.sock
+2026-09-10T07:29:42.787302Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-09-10T17:23:16.474550Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=2156
+2026-09-11T07:30:28.273638Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=1371
+2026-09-11T07:30:28.273779Z  INFO herdr::client: connecting to server path=/Users/jobstoit/.config/herdr/herdr-client.sock
+2026-09-11T07:30:28.511937Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-09-11T16:06:32.164509Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=1371
+2026-09-14T07:30:07.674012Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=1443
+2026-09-14T07:30:07.674152Z  INFO herdr::client: connecting to server path=/Users/jobstoit/.config/herdr/herdr-client.sock
+2026-09-14T07:30:07.913029Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-09-14T07:30:25.823863Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=1443
+2026-09-14T07:31:18.019374Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=4404
+2026-09-14T07:31:18.019641Z  INFO herdr::client: connecting to server path=/Users/jobstoit/.config/herdr/herdr-client.sock
+2026-09-14T07:31:18.250622Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-09-14T16:26:55.180948Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=4404
+2026-09-15T01:34:10.221788Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=1330
+2026-09-15T01:34:10.222052Z  INFO herdr::client: connecting to server path=/Users/jobstoit/.config/herdr/herdr-client.sock
+2026-09-15T01:34:10.485067Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-09-15T03:05:31.761437Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=1330
+2026-09-15T05:03:00.753588Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=6286
+2026-09-15T05:03:00.753820Z  INFO herdr::client: connecting to server path=/Users/jobstoit/.config/herdr/herdr-client.sock
+2026-09-15T05:03:00.993387Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-09-15T05:04:08.268698Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=6286
+2026-09-15T05:53:57.110306Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=18319
+2026-09-15T05:53:57.110506Z  INFO herdr::client: connecting to server path=/Users/jobstoit/.config/herdr/herdr-client.sock
+2026-09-15T05:53:57.326712Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.0
+2026-09-16T15:29:12.350594Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=18319
+2026-09-17T07:09:07.772318Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=2301
+2026-09-17T07:09:07.772528Z  INFO herdr::client: connecting to server path=/Users/jobstoit/.config/herdr/herdr-client.sock
+2026-09-17T07:09:08.021615Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.0
+2026-09-17T16:45:42.561345Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=2301
+2026-09-18T07:08:38.006096Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=1614
+2026-09-18T07:08:38.006209Z  INFO herdr::client: connecting to server path=/Users/jobstoit/.config/herdr/herdr-client.sock
+2026-09-18T07:08:38.258665Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.0
+2026-09-18T10:50:58.721444Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=1614
+2026-09-18T10:51:03.739286Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=12426
+2026-09-18T10:51:03.739544Z  INFO herdr::client: connecting to server path=/Users/jobstoit/.config/herdr/herdr-client.sock
+2026-09-18T10:51:03.993538Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.0
+2026-09-18T11:20:20.484642Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=12426
+2026-09-18T12:52:05.136694Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=23825
+2026-09-18T12:52:05.137031Z  INFO herdr::client: connecting to server path=/Users/jobstoit/.config/herdr/herdr-client.sock
+2026-09-18T12:52:05.258609Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.0
+2026-09-21T08:43:41.103417Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=23825
+2026-09-21T08:53:04.511635Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=7674
+2026-09-21T08:53:04.511787Z  INFO herdr::client: connecting to server path=/Users/jobstoit/.config/herdr/herdr-client.sock
+2026-09-21T08:53:04.723242Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.0
+2026-09-21T17:33:50.689425Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=7674
+2026-09-22T07:08:11.688804Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=1611
+2026-09-22T07:08:11.688987Z  INFO herdr::client: connecting to server path=/Users/jobstoit/.config/herdr/herdr-client.sock
+2026-09-22T07:08:11.927085Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.0
+2026-09-22T16:10:03.973076Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=1611
+2026-09-23T05:16:05.673188Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=2285
+2026-09-23T05:16:05.673319Z  INFO herdr::client: connecting to server path=/Users/jobstoit/.config/herdr/herdr-client.sock
+2026-09-23T05:16:05.680336Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.0
+2026-09-23T18:20:54.032317Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=2285
+2026-09-23T18:22:24.973272Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=18256
+2026-09-23T18:22:24.973692Z  INFO herdr::client: connecting to server path=/Users/jobstoit/.config/herdr/herdr-client.sock
+2026-09-23T18:22:25.203450Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.0
+2026-09-23T18:22:33.500200Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=18256
+2026-09-24T02:39:50.987424Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=29726
+2026-09-24T02:39:50.987972Z  INFO herdr::client: connecting to server path=/Users/jobstoit/.config/herdr/herdr-client.sock
+2026-09-24T02:39:51.008923Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.0
+2026-09-24T18:21:55.313262Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=29726
+2026-09-25T05:12:52.814853Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=2245
+2026-09-25T05:12:52.815003Z  INFO herdr::client: connecting to server path=/Users/jobstoit/.config/herdr/herdr-client.sock
+2026-09-25T05:12:52.820772Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.1
+2026-09-25T16:58:33.484962Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=2245
+2026-09-26T03:17:58.649359Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=2402
+2026-09-26T03:17:58.649510Z  INFO herdr::client: connecting to server path=/Users/jobstoit/.config/herdr/herdr-client.sock
+2026-09-26T03:17:58.656913Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.1
+2026-09-27T15:30:16.951216Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=2402
+2026-09-28T07:09:03.780957Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=3002
+2026-09-28T07:09:03.781092Z  INFO herdr::client: connecting to server path=/Users/jobstoit/.config/herdr/herdr-client.sock
+2026-09-28T07:09:04.017211Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.1
+2026-09-28T16:40:01.417678Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=3002
+2026-09-29T06:10:53.077684Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=2283
+2026-09-29T06:10:53.077852Z  INFO herdr::client: connecting to server path=/Users/jobstoit/.config/herdr/herdr-client.sock
+2026-09-29T06:10:53.297553Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.1
+2026-10-01T10:53:17.766048Z  WARN herdr::sound: sound playback failed sound=Done err=player exited with exit status: 1: Error: AudioQueueStart failed (-66681)
+2026-10-01T10:56:46.985214Z  WARN herdr::sound: sound playback failed sound=Done err=player exited with exit status: 1: Error: AudioQueueStart failed (-66681)
+2026-10-02T08:54:03.978534Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=2283
+2026-10-02T11:05:49.161909Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=11075
+2026-10-02T11:05:49.162112Z  INFO herdr::client: connecting to server path=/Users/jobstoit/.config/herdr/herdr-client.sock
+2026-10-02T11:05:49.198953Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.1
+2026-10-02T11:06:08.044614Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=11075
+2026-10-02T17:41:14.902488Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=1970
+2026-10-02T17:41:14.902617Z  INFO herdr::client: connecting to server path=/Users/jobstoit/.config/herdr/herdr-client.sock
+2026-10-02T17:41:15.153692Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.1
+2026-10-02T17:57:27.647599Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=1970
+2026-10-05T05:08:16.577181Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=2082
+2026-10-05T05:08:16.577307Z  INFO herdr::client: connecting to server path=/Users/jobstoit/.config/herdr/herdr-client.sock
+2026-10-05T05:08:16.797694Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.1
+2026-10-05T05:08:22.406302Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=2082
+2026-10-05T05:11:51.810593Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=5693
+2026-10-05T05:11:51.810927Z  INFO herdr::client: connecting to server path=/Users/jobstoit/.config/herdr/herdr-client.sock
+2026-10-05T05:11:51.949522Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.1
+2026-10-05T07:43:24.972726Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=5693
+2026-10-05T07:43:27.319833Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=41627
+2026-10-05T07:43:27.319938Z  INFO herdr::client: connecting to server path=/Users/jobstoit/.config/herdr/herdr-client.sock
+2026-10-05T07:43:27.467153Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.1
+2026-10-05T08:33:32.738775Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=41627
+2026-10-05T08:33:34.635717Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=76789
+2026-10-05T08:33:34.635819Z  INFO herdr::client: connecting to server path=/Users/jobstoit/.config/herdr/herdr-client.sock
+2026-10-05T08:33:34.705806Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.1
+2026-10-08T04:46:59.034238Z  INFO herdr::client: client terminal unavailable; detaching err=Inappropriate ioctl for device (os error 25)
+2026-10-08T04:46:59.037403Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=76789
+2026-10-08T04:48:09.765431Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=1626
+2026-10-08T04:48:09.766969Z  INFO herdr::client: connecting to server path=/Users/jobstoit/.config/herdr/herdr-client.sock
+2026-10-08T04:48:09.809167Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.3
+2026-10-08T16:37:18.112646Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=1626
+2026-10-09T02:45:53.848497Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=1573
+2026-10-09T02:45:53.848640Z  INFO herdr::client: connecting to server path=/Users/jobstoit/.config/herdr/herdr-client.sock
+2026-10-09T02:45:54.073979Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.3
+2026-10-13T01:34:02.983923Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=1573
+2026-10-13T06:03:31.060063Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=10194
+2026-10-13T06:03:31.060568Z  INFO herdr::client: connecting to server path=/Users/jobstoit/.config/herdr/herdr-client.sock
+2026-10-13T06:03:31.222808Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.3
+2026-10-13T16:26:31.082765Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=10194
+2026-10-14T06:48:59.638929Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=2098
+2026-10-14T06:48:59.639055Z  INFO herdr::client: connecting to server path=/Users/jobstoit/.config/herdr/herdr-client.sock
+2026-10-14T06:48:59.646328Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.3
+2026-10-14T15:39:16.614996Z  INFO herdr::client: client terminal unavailable; detaching err=Inappropriate ioctl for device (os error 25)
+2026-10-14T15:39:16.616332Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=2098
+2026-10-15T07:28:20.984733Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=1537
+2026-10-15T07:28:20.984878Z  INFO herdr::client: connecting to server path=/Users/jobstoit/.config/herdr/herdr-client.sock
+2026-10-15T07:28:21.182883Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.3
+2026-10-15T15:56:56.338449Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=1537
+2026-10-16T06:42:37.496653Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=1731
+2026-10-16T06:42:37.496827Z  INFO herdr::client: connecting to server path=/Users/jobstoit/.config/herdr/herdr-client.sock
+2026-10-16T06:42:37.788382Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.3
+2026-10-16T16:31:56.191812Z  INFO herdr::client: client terminal unavailable; detaching err=Inappropriate ioctl for device (os error 25)
+2026-10-16T16:31:56.193371Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=1731
+2026-10-19T07:27:05.970839Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=1868
+2026-10-19T07:27:05.970969Z  INFO herdr::client: connecting to server path=/Users/jobstoit/.config/herdr/herdr-client.sock
+2026-10-19T07:27:05.975773Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.3
+2026-10-21T17:12:46.313221Z  INFO herdr::client: client terminal unavailable; detaching err=Inappropriate ioctl for device (os error 25)
+2026-10-21T17:12:46.315752Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=1868
+2026-10-22T05:00:26.215977Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=1846
+2026-10-22T05:00:26.216139Z  INFO herdr::client: connecting to server path=/Users/jobstoit/.config/herdr/herdr-client.sock
+2026-10-22T05:00:26.853215Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.5
+2026-10-23T17:59:30.836683Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=1846
+2026-10-26T04:29:20.719596Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=1673
+2026-10-26T04:29:20.719773Z  INFO herdr::client: connecting to server path=/Users/jobstoit/.config/herdr/herdr-client.sock
+2026-10-26T04:29:20.838358Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.5
+2026-10-26T18:39:09.252492Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=1673
+2026-10-27T04:02:48.539192Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=1637
+2026-10-27T04:02:48.539330Z  INFO herdr::client: connecting to server path=/Users/jobstoit/.config/herdr/herdr-client.sock
+2026-10-27T04:02:48.641312Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.5
+2026-10-27T15:29:36.724456Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=1637
+2026-10-28T03:59:31.441288Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=11761
+2026-10-28T03:59:31.441729Z  INFO herdr::client: connecting to server path=/Users/jobstoit/.config/herdr/herdr-client.sock
+2026-10-28T03:59:31.489506Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.5
+2026-10-29T16:06:40.561076Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=11761
+2026-10-30T06:51:40.759700Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=1722
+2026-10-30T06:51:40.759852Z  INFO herdr::client: connecting to server path=/Users/jobstoit/.config/herdr/herdr-client.sock
+2026-10-30T06:51:40.976033Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.5
+2026-10-30T16:22:06.436774Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=1722
+2026-11-02T07:44:03.805689Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=3119
+2026-11-02T07:44:03.806821Z  INFO herdr::client: connecting to server path=/Users/jobstoit/.config/herdr/herdr-client.sock
+2026-11-02T07:44:03.906273Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.5
+2026-11-03T15:19:39.266906Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=3119
+2026-11-04T08:27:46.209435Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=2097
+2026-11-04T08:27:46.210771Z  INFO herdr::client: connecting to server path=/Users/jobstoit/.config/herdr/herdr-client.sock
+2026-11-04T08:27:46.345199Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.5
+2026-11-05T04:37:01.298405Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=2097
+2026-11-05T04:47:22.746878Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=1743
+2026-11-05T04:47:22.748975Z  INFO herdr::client: connecting to server path=/Users/jobstoit/.config/herdr/herdr-client.sock
+2026-11-05T04:47:22.853105Z  INFO herdr::client::handshake: endpoint handshake succeeded generation=1 server_version=0.9.5
+2026-11-10T05:52:30.694340Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=1743

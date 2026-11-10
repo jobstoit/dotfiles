@@ -1,0 +1,121 @@
+{
+  "id": "root",
+  "type": "row",
+  "titlebar": "none",
+  "traffic_lights": [44, 17],
+  "preview": "layouts/bridge.svg",
+  "padding": 10,
+  "gap": 4,
+  "background": "#000000",
+  "ui_font": "Barlow Semi Condensed",
+  "terminal_padding": [14, 12],
+  "colors": {
+    "background": "#000000",
+    "canvas": "#000000",
+    "chrome": "#000000",
+    "surface": "#000000",
+    "popover": "#000000",
+    "foreground": "#ffe6cc",
+    "muted": "#ffcc99",
+    "dim": "#cc99cc",
+    "raised": "#2a2030",
+    "selected": "#3a2a1c",
+    "hover": "#241a12",
+    "border": "#4d3a55",
+    "input": "#6b5078",
+    "accent": "#ff9966",
+    "accent_foreground": "#000000",
+    "solid": "#ff9966",
+    "solid_foreground": "#000000"
+  },
+  "children": [
+    {
+      "id": "sidebar",
+      "type": "column",
+      "size": { "px": 260 },
+      "min": 76,
+      "max": 480,
+      "gap": 4,
+      "resizable": false,
+      "children": [
+        { "id": "elbow-top", "type": "block", "size": { "px": 44 }, "window_drag": true,
+          "content": { "mod": "bridge-frame", "props": { "part": "top" } } },
+        { "id": "spaces-row", "type": "row", "size": { "weight": 1 }, "min": 90, "gap": 8, "resizable": false,
+          "children": [
+            { "id": "rail-spaces", "type": "block", "size": { "px": 36 },
+              "content": { "mod": "bridge-frame", "props": { "part": "rail", "section": "spaces" } } },
+            { "id": "spaces", "type": "block", "content": { "mod": "bridge-spaces" } }
+          ] },
+        { "id": "agents-row", "type": "row", "size": { "weight": 1 }, "min": 90, "gap": 8, "resizable": false,
+          "children": [
+            { "id": "rail-agents", "type": "block", "size": { "px": 36 },
+              "content": { "mod": "bridge-frame", "props": { "part": "rail", "section": "agents" } } },
+            { "id": "agents", "type": "block", "content": { "mod": "bridge-agents" } }
+          ] },
+        { "id": "footer-row", "type": "row", "size": { "px": 76 }, "gap": 8, "resizable": false,
+          "children": [
+            { "id": "rail-footer", "type": "block", "size": { "px": 36 },
+              "content": { "mod": "bridge-frame", "props": { "part": "rail", "section": "footer" } } },
+            { "id": "sidebar-footer", "type": "block",
+              "content": { "mod": "bridge-frame", "props": { "part": "footer" } } }
+          ] },
+        { "id": "elbow-bottom", "type": "block", "size": { "px": 36 },
+          "content": { "mod": "bridge-frame", "props": { "part": "bottom" } } }
+      ]
+    },
+    {
+      "id": "work",
+      "type": "column",
+      "size": { "weight": 1 },
+      "resizable": false,
+      "children": [
+        { "id": "tabs", "type": "block", "size": { "px": 44 }, "window_drag": true,
+          "content": { "mod": "bridge-tabs" } },
+        {
+          "id": "work-body",
+          "type": "row",
+          "gap": 8,
+          "children": [
+            {
+              "id": "main",
+              "type": "block",
+              "content": {
+                "tab": "active",
+                "pane": {
+                  "gap": 8,
+                  "radius": 6,
+                  "background": "background",
+                  "border": { "width": 1, "color": "#1c1c22" },
+                  "focus": { "width": 1, "color": "accent" },
+                  "header": { "content": { "mod": "bridge-pane" }, "height": 26, "position": "top", "reveal": "always" },
+                  "lone": true
+                }
+              }
+            },
+            {
+              "id": "panel",
+              "type": "column",
+              "size": { "px": 368 },
+              "min": 280,
+              "max": 900,
+              "hidden": true,
+              "children": [
+                {
+                  "id": "panel-body",
+                  "type": "stack",
+                  "active": "files",
+                  "children": [
+                    { "id": "files", "type": "block", "content": { "mod": "files" } },
+                    { "id": "changes", "type": "block", "content": { "mod": "changes" } }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        { "id": "status", "type": "block", "size": { "px": 36 },
+          "content": { "mod": "bridge-status" } }
+      ]
+    }
+  ]
+}

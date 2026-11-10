@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 100" width="160" height="100">
+  <!-- canvas -->
+  <rect width="160" height="100" rx="6" fill="#1e2026"/>
+  <!-- brand card -->
+  <rect x="5" y="5" width="36" height="9" rx="3" fill="#262930" stroke="#343842" stroke-width="1"/>
+  <rect x="8" y="8" width="3" height="3" rx="1" fill="#e6e8ec"/>
+  <rect x="13" y="8.5" width="10" height="2" rx="1" fill="#e6e8ec"/>
+  <!-- spaces card -->
+  <rect x="5" y="17" width="36" height="36" rx="4" fill="#262930" stroke="#343842" stroke-width="1"/>
+  <rect x="9" y="21" width="10" height="2" rx="1" fill="#7a8090"/>
+  <rect x="8" y="26" width="30" height="7" rx="3" fill="#3a3f4c"/>
+  <rect x="10" y="28" width="3" height="3" rx="1" fill="#8ab4f8"/>
+  <rect x="15" y="28.5" width="12" height="2" rx="1" fill="#e6e8ec"/>
+  <rect x="10" y="37" width="3" height="3" rx="1" fill="#18b47a"/>
+  <rect x="15" y="37.5" width="14" height="2" rx="1" fill="#a0a6b2"/>
+  <!-- agents card -->
+  <rect x="5" y="56" width="36" height="24" rx="4" fill="#262930" stroke="#343842" stroke-width="1"/>
+  <rect x="9" y="60" width="10" height="2" rx="1" fill="#7a8090"/>
+  <rect x="9" y="65" width="26" height="1.5" rx="0.75" fill="#6c7280"/>
+  <rect x="9" y="69" width="22" height="1.5" rx="0.75" fill="#6c7280"/>
+  <!-- footer card -->
+  <rect x="5" y="83" width="36" height="12" rx="3" fill="#262930" stroke="#343842" stroke-width="1"/>
+  <rect x="9" y="86" width="12" height="2" rx="1" fill="#a0a6b2"/>
+  <rect x="9" y="90" width="14" height="2" rx="1" fill="#7a8090"/>
+  <!-- tab bar: pills on the canvas -->
+  <rect x="47" y="5" width="20" height="8" rx="3" fill="#3a3f4c" stroke="#343842" stroke-width="0.8"/>
+  <rect x="51" y="8" width="12" height="2" rx="1" fill="#e6e8ec"/>
+  <rect x="69" y="5" width="16" height="8" rx="3" fill="#2b2e36" stroke="#343842" stroke-width="0.8"/>
+  <rect x="73" y="8" width="8" height="2" rx="1" fill="#a0a6b2"/>
+  <rect x="121" y="5" width="8" height="8" rx="3" fill="#2b2e36" stroke="#343842" stroke-width="0.8"/>
+  <rect x="131" y="5" width="22" height="8" rx="3" fill="#2b2e36" stroke="#343842" stroke-width="0.8"/>
+  <rect x="135" y="8" width="14" height="2" rx="1" fill="#a0a6b2"/>
+  <!-- pane card -->
+  <rect x="47" y="17" width="108" height="63" rx="5" fill="#2b2e36" stroke="#343842" stroke-width="1"/>
+  <line x1="48" y1="27" x2="154" y2="27" stroke="#343842" stroke-width="0.8"/>
+  <rect x="52" y="21" width="10" height="2" rx="1" fill="#a0a6b2"/>
+  <rect x="53" y="33" width="28" height="2" rx="1" fill="#e6e8ec"/>
+  <rect x="84" y="33" width="10" height="2" rx="1" fill="#5235d6"/>
+  <rect x="53" y="39" width="12" height="2" rx="1" fill="#1f5fd6"/>
+  <rect x="68" y="39" width="14" height="2" rx="1" fill="#1f5fd6"/>
+  <rect x="85" y="39" width="16" height="2" rx="1" fill="#0a7a51"/>
+  <rect x="104" y="39" width="12" height="2" rx="1" fill="#a35406"/>
+  <rect x="53" y="47" width="3" height="2" rx="1" fill="#18b47a"/>
+  <rect x="59" y="47" width="34" height="2" rx="1" fill="#e6e8ec"/>
+  <rect x="53" y="52" width="3" height="2" rx="1" fill="#18b47a"/>
+  <rect x="59" y="52" width="40" height="2" rx="1" fill="#e6e8ec"/>
+  <rect x="53" y="57" width="3" height="2" rx="1" fill="#f5a524"/>
+  <rect x="59" y="57" width="30" height="2" rx="1" fill="#e6e8ec"/>
+  <rect x="53" y="62" width="3" height="2" rx="1" fill="#ee4447"/>
+  <rect x="59" y="62" width="36" height="2" rx="1" fill="#e6e8ec"/>
+  <rect x="53" y="70" width="8" height="2" rx="1" fill="#e6e8ec"/>
+  <rect x="64" y="70" width="12" height="2" rx="1" fill="#18b47a"/>
+  <rect x="79" y="70" width="10" height="2" rx="1" fill="#ee4447"/>
+  <rect x="53" y="75" width="1.5" height="3" fill="#8ab4f8"/>
+  <!-- status card -->
+  <rect x="47" y="84" width="108" height="11" rx="3" fill="#262930" stroke="#343842" stroke-width="1"/>
+  <rect x="51" y="88.5" width="18" height="2" rx="1" fill="#7a8090"/>
+  <rect x="131" y="88.5" width="20" height="2" rx="1" fill="#7a8090"/>
+</svg>

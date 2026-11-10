@@ -1,4 +1,5 @@
 #!/bin/sh
 export GOPATH=~/.go
 export PATH=$GOPATH/bin:$PATH
+export GOROOT=""
 export GOROOT="$(go env GOROOT)"

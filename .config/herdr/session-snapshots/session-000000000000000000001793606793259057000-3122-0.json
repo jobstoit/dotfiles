@@ -1,0 +1,422 @@
+{
+  "version": 3,
+  "workspaces": [
+    {
+      "id": "wJ",
+      "custom_name": null,
+      "identity_cwd": "/Users/jobstoit/Dev/Complero",
+      "public_pane_numbers": {
+        "3": 54,
+        "1": 51,
+        "6": 53,
+        "4": 55,
+        "5": 29,
+        "2": 5
+      },
+      "next_public_pane_number": 56,
+      "public_tab_numbers": [
+        14,
+        4,
+        8,
+        10
+      ],
+      "next_public_tab_number": 15,
+      "tabs": [
+        {
+          "custom_name": null,
+          "layout": {
+            "Pane": 1
+          },
+          "panes": {
+            "1": {
+              "cwd": "/Users/jobstoit/Dev/Complero"
+            }
+          },
+          "zoomed": false,
+          "focused": 1,
+          "root_pane": 1
+        },
+        {
+          "custom_name": null,
+          "layout": {
+            "Split": {
+              "direction": "Horizontal",
+              "ratio": 0.5,
+              "first": {
+                "Pane": 2
+              },
+              "second": {
+                "Split": {
+                  "direction": "Vertical",
+                  "ratio": 0.5,
+                  "first": {
+                    "Pane": 3
+                  },
+                  "second": {
+                    "Pane": 4
+                  }
+                }
+              }
+            }
+          },
+          "panes": {
+            "2": {
+              "cwd": "/Users/jobstoit/Dev/Complero"
+            },
+            "4": {
+              "cwd": "/Users/jobstoit/Dev/Complero"
+            },
+            "3": {
+              "cwd": "/Users/jobstoit/Dev/Complero"
+            }
+          },
+          "zoomed": false,
+          "focused": 2,
+          "root_pane": 2
+        },
+        {
+          "custom_name": null,
+          "layout": {
+            "Pane": 5
+          },
+          "panes": {
+            "5": {
+              "cwd": "/Users/jobstoit/Dev/Complero/infra"
+            }
+          },
+          "zoomed": false,
+          "focused": 5,
+          "root_pane": 5
+        },
+        {
+          "custom_name": null,
+          "layout": {
+            "Pane": 6
+          },
+          "panes": {
+            "6": {
+              "cwd": "/Users/jobstoit/Dev/Complero/infra"
+            }
+          },
+          "zoomed": false,
+          "focused": 6,
+          "root_pane": 6
+        }
+      ],
+      "active_tab": 1
+    },
+    {
+      "id": "wK",
+      "custom_name": null,
+      "identity_cwd": "/Users/jobstoit/Dev/Complero/complero-service",
+      "public_pane_numbers": {
+        "9": 3,
+        "8": 2,
+        "7": 8
+      },
+      "next_public_pane_number": 9,
+      "public_tab_numbers": [
+        1,
+        2,
+        3
+      ],
+      "next_public_tab_number": 6,
+      "tabs": [
+        {
+          "custom_name": null,
+          "layout": {
+            "Pane": 7
+          },
+          "panes": {
+            "7": {
+              "cwd": "/Users/jobstoit/Dev/Complero/complero-service"
+            }
+          },
+          "zoomed": false,
+          "focused": 7,
+          "root_pane": 7
+        },
+        {
+          "custom_name": null,
+          "layout": {
+            "Pane": 8
+          },
+          "panes": {
+            "8": {
+              "cwd": "/Users/jobstoit/Dev/Complero/complero-service"
+            }
+          },
+          "zoomed": false,
+          "focused": 8,
+          "root_pane": 8
+        },
+        {
+          "custom_name": null,
+          "layout": {
+            "Pane": 9
+          },
+          "panes": {
+            "9": {
+              "cwd": "/Users/jobstoit/Dev/Complero/complero-service"
+            }
+          },
+          "zoomed": false,
+          "focused": 9,
+          "root_pane": 9
+        }
+      ],
+      "active_tab": 0
+    },
+    {
+      "id": "wM",
+      "custom_name": null,
+      "identity_cwd": "/Users/jobstoit/Dev/Complero/complero-service_master",
+      "public_pane_numbers": {
+        "10": 1,
+        "12": 3,
+        "11": 2
+      },
+      "next_public_pane_number": 4,
+      "public_tab_numbers": [
+        1,
+        2,
+        3
+      ],
+      "next_public_tab_number": 4,
+      "tabs": [
+        {
+          "custom_name": null,
+          "layout": {
+            "Pane": 10
+          },
+          "panes": {
+            "10": {
+              "cwd": "/Users/jobstoit/Dev/Complero/complero-service_master"
+            }
+          },
+          "zoomed": false,
+          "focused": 10,
+          "root_pane": 10
+        },
+        {
+          "custom_name": null,
+          "layout": {
+            "Pane": 11
+          },
+          "panes": {
+            "11": {
+              "cwd": "/Users/jobstoit/Dev/Complero/complero-service_master"
+            }
+          },
+          "zoomed": false,
+          "focused": 11,
+          "root_pane": 11
+        },
+        {
+          "custom_name": null,
+          "layout": {
+            "Pane": 12
+          },
+          "panes": {
+            "12": {
+              "cwd": "/Users/jobstoit/Dev/Complero/complero-service_master"
+            }
+          },
+          "zoomed": false,
+          "focused": 12,
+          "root_pane": 12
+        }
+      ],
+      "active_tab": 2
+    },
+    {
+      "id": "wN",
+      "custom_name": null,
+      "identity_cwd": "/Users/jobstoit/Dev/Complero/complero-form",
+      "public_pane_numbers": {
+        "13": 1,
+        "14": 2
+      },
+      "next_public_pane_number": 3,
+      "public_tab_numbers": [
+        1,
+        2
+      ],
+      "next_public_tab_number": 3,
+      "tabs": [
+        {
+          "custom_name": null,
+          "layout": {
+            "Pane": 13
+          },
+          "panes": {
+            "13": {
+              "cwd": "/Users/jobstoit/Dev/Complero/complero-form"
+            }
+          },
+          "zoomed": false,
+          "focused": 13,
+          "root_pane": 13
+        },
+        {
+          "custom_name": null,
+          "layout": {
+            "Pane": 14
+          },
+          "panes": {
+            "14": {
+              "cwd": "/Users/jobstoit/Dev/Complero/complero-form"
+            }
+          },
+          "zoomed": false,
+          "focused": 14,
+          "root_pane": 14
+        }
+      ],
+      "active_tab": 1
+    },
+    {
+      "id": "wQ",
+      "custom_name": null,
+      "identity_cwd": "/Users/jobstoit/Dev/jobstoit/dotfiles",
+      "public_pane_numbers": {
+        "16": 2,
+        "15": 1,
+        "17": 4
+      },
+      "next_public_pane_number": 5,
+      "public_tab_numbers": [
+        1,
+        2,
+        4
+      ],
+      "next_public_tab_number": 5,
+      "tabs": [
+        {
+          "custom_name": null,
+          "layout": {
+            "Pane": 15
+          },
+          "panes": {
+            "15": {
+              "cwd": "/Users/jobstoit/Dev/jobstoit/dotfiles"
+            }
+          },
+          "zoomed": false,
+          "focused": 15,
+          "root_pane": 15
+        },
+        {
+          "custom_name": null,
+          "layout": {
+            "Pane": 16
+          },
+          "panes": {
+            "16": {
+              "cwd": "/Users/jobstoit/Dev/jobstoit/dotfiles/.config/nix"
+            }
+          },
+          "zoomed": false,
+          "focused": 16,
+          "root_pane": 16
+        },
+        {
+          "custom_name": null,
+          "layout": {
+            "Pane": 17
+          },
+          "panes": {
+            "17": {
+              "cwd": "/Users/jobstoit/Dev/jobstoit/dotfiles/.config/nix"
+            }
+          },
+          "zoomed": false,
+          "focused": 17,
+          "root_pane": 17
+        }
+      ],
+      "active_tab": 0
+    },
+    {
+      "id": "wR",
+      "custom_name": null,
+      "identity_cwd": "/Users/jobstoit/Dev/jobstoit/mallacas",
+      "public_pane_numbers": {
+        "19": 2,
+        "18": 1
+      },
+      "next_public_pane_number": 3,
+      "public_tab_numbers": [
+        1,
+        2
+      ],
+      "next_public_tab_number": 3,
+      "tabs": [
+        {
+          "custom_name": null,
+          "layout": {
+            "Pane": 18
+          },
+          "panes": {
+            "18": {
+              "cwd": "/Users/jobstoit/Dev/jobstoit/mallacas"
+            }
+          },
+          "zoomed": false,
+          "focused": 18,
+          "root_pane": 18
+        },
+        {
+          "custom_name": null,
+          "layout": {
+            "Pane": 19
+          },
+          "panes": {
+            "19": {
+              "cwd": "/Users/jobstoit/Dev/jobstoit/mallacas"
+            }
+          },
+          "zoomed": false,
+          "focused": 19,
+          "root_pane": 19
+        }
+      ],
+      "active_tab": 0
+    },
+    {
+      "id": "wS",
+      "custom_name": null,
+      "identity_cwd": "/Users/jobstoit/Dev/Complero/client",
+      "public_pane_numbers": {
+        "20": 1
+      },
+      "next_public_pane_number": 2,
+      "public_tab_numbers": [
+        1
+      ],
+      "next_public_tab_number": 2,
+      "tabs": [
+        {
+          "custom_name": null,
+          "layout": {
+            "Pane": 20
+          },
+          "panes": {
+            "20": {
+              "cwd": "/Users/jobstoit/Dev/Complero/client"
+            }
+          },
+          "zoomed": false,
+          "focused": 20,
+          "root_pane": 20
+        }
+      ],
+      "active_tab": 0
+    }
+  ],
+  "active": 0,
+  "selected": 0,
+  "sidebar_width": null,
+  "sidebar_section_split": null,
+  "collapsed_space_keys": []
+}
